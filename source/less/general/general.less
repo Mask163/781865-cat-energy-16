@@ -1,0 +1,63 @@
+@font-face {
+  font-family: Oswald;
+  src: url("../../fonts/oswaldmedium.woff") format("woff"),
+       url("../../fonts/oswaldmedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url("../../fonts/oswaldregular.woff") format("woff"),
+       url("../../fonts/oswaldregular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@text-color: #444444;
+@header-color: #111111;
+@bg-color: #ffffff;
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  
+  font-family: Oswald, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: @text-color;
+  
+  background-color: @bg-color;
+  
+//  Временно
+  outline: 1px solid red;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
