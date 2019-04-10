@@ -1,0 +1,51 @@
+.more {
+  position: relative;
+  
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  
+  text-align: center;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    
+    background: url(../../img/icon-plus-mobile.svg) 0 0 no-repeat;
+  }
+}
+
+.more__inner {
+  padding: 81px 20px 24px 20px;
+}
+
+.more__title {
+  margin: 0;
+  margin-bottom: 7px;
+  
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: @header-color;
+  text-transform: uppercase;
+}
+
+.more__text {
+  margin: 0;
+  margin-bottom: 21px;
+  
+  font-family: Arial, Tahoma, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.more__button {
+  color: @text-color;
+  
+  background-color: #f2f2f2;
+}
