@@ -1,3 +1,8 @@
+.site-header__inner {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 .site-header__top {
   padding-top: 11px;
   padding-bottom: 16px;
@@ -54,5 +59,39 @@
   
   &::after {
     top: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-header__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .site-header__top {
+    border-bottom: none;
+  }
+  
+  .site-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .site-header__inner {
+    position: relative;
+    
+    &::before {
+      content: "";
+      
+      position: absolute;
+      top: 0;
+      left: 50%;
+      
+      width: 720px;
+      height: 696px;
+      
+      background: url(../../img/index-background-desktop@1x.jpg) 0 0 no-repeat;
+    }
   }
 }
