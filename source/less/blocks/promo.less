@@ -65,6 +65,7 @@
   .promo__wrapper {
     display: flex;
     flex-direction: column;
+    padding-bottom: 167px;
   }
   
   .promo__title {
@@ -99,5 +100,28 @@
     margin: 0 auto;
     
     order: 4;
+  }
+}
+
+@media (min-width: 1440px) {
+  .promo__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .promo__title {
+    width: 100%;
+  }
+  
+  .promo__text {
+    width: 100%;
+  }
+  
+  .promo__button {
+    align-self: flex-start;
+  }
+  
+  .promo__image {
+    margin-top: -120px;
   }
 }

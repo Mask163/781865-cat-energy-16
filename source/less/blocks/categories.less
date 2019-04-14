@@ -172,7 +172,11 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
+  .categories__wrapper {
+    padding-top: 80px;
+  }
+  
   .categories__list {
     display: flex;
     flex-wrap: wrap;
@@ -181,6 +185,9 @@
   
   .categories__item {
     width: 570px;
-    margin: 0;
+    
+    &:not(:last-child) {
+      margin: 0;
+    }
   }
 }
