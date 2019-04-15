@@ -48,4 +48,24 @@
 
 .catalog-item__button {
   flex-grow: 1;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .catalog-item {
+    width: 42.1875%;
+    
+    border-top: none;
+    padding-bottom: 0;
+  }
+  
+  .catalog-item__inner {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .catalog-item {
+    width: 245px;
+  }
 }

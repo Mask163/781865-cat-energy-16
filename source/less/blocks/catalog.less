@@ -1,5 +1,28 @@
+.catalog__inner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .catalog__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: 768px) {
+  .catalog__inner {
+    padding: 0 30px 60px;
+  }
+  
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1440px) {
+  .catalog__inner {
+    padding: 0 110px 80px;
+  }
 }

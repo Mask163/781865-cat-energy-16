@@ -70,28 +70,24 @@
   
   .site-header__top {
     border-bottom: none;
+    padding: 0;
   }
   
   .site-header__toggle {
     display: none;
   }
+  
+  .site-header__wrapper {
+    padding: 0;
+  }
+  
+  .site-header__inner {
+    padding: 34px 30px 0; 
+  }
 }
 
 @media (min-width: 1440px) {
   .site-header__inner {
-    position: relative;
-    
-    &::before {
-      content: "";
-      
-      position: absolute;
-      top: 0;
-      left: 50%;
-      
-      width: 720px;
-      height: 696px;
-      
-      background: url(../../img/index-background-desktop@1x.jpg) 0 0 no-repeat;
-    }
+    padding: 64px 110px 0; 
   }
 }
