@@ -4,6 +4,8 @@
 
 .site-footer__wrapper {
   padding: 0 20px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .site-footer__logo {
@@ -11,4 +13,32 @@
   
   text-align: center;
   border-bottom: 1px solid #d9d9d9;
+}
+
+@media (min-width: 768px) {
+  
+  .site-footer {
+    padding-top: 64px;
+    padding-bottom: 62px;
+  }
+  
+  .site-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 0 30px;
+  }
+  
+  .site-footer__logo {
+    padding: 0;
+    
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  
+  .site-footer__wrapper {
+    padding: 0 110px;
+  }
 }
