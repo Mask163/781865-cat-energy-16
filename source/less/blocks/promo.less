@@ -25,6 +25,7 @@
   padding: 29px 20px 22px 20px;
   margin: 0 auto;
   max-width: 1440px;
+  box-sizing: border-box;
 }
 
 .promo__title {
@@ -110,10 +111,11 @@
 
 @media (min-width: 1440px) {
   .promo__wrapper {
+    position: relative;
+    
+    padding: 118px 110px 98px;
     flex-direction: row;
     flex-wrap: wrap;
-
-    position: relative;
 
     &::before {
       content: "";
@@ -132,14 +134,21 @@
 
   .promo__title {
     width: 100%;
+    padding-left: 80px;
+    padding-right: 710px;
+    margin-bottom: 35px;
   }
 
   .promo__text {
     width: 100%;
+    padding-left: 80px;
+    padding-right: 710px;
+    margin-bottom: 50px;
   }
 
   .promo__button {
     align-self: flex-start;
+    margin-left: 80px;
   }
 
   .promo__image {
