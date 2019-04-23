@@ -51,5 +51,42 @@
 }
 
 @media (min-width: 768px) {
+  .more {
+    box-sizing: border-box;
+    width: 42.1875%;
+    
+    border: 1px solid #ededed;
+    
+    &::before {
+      top: 55px;
+      
+      width: 60px;
+      height: 60px;
+      margin-left: -30px;
+    }
+    
+    .more__title {
+      padding: 0 25px;
+      margin-bottom: 20px;
+      
+      font-size: 20px;
+    }
+    
+    .more__text {
+      padding: 0 25px;
+      margin-bottom: 85px;
+      
+      font-size: 16px;
+    }
+    
+    .more__button {
+      padding: 12px 15px;
+      
+      font-size: 16px;
+    }
+  }
   
+  .more__inner {
+    padding: 165px 37px 30px;
+  }
 }
