@@ -1,0 +1,129 @@
+.additional-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.additional-list__item {
+  padding: 13px 0 17px;
+  border-bottom: 1px solid #cdcdcd;
+  
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+}
+
+.additional-list__title {
+  margin: 0;
+  margin-bottom: 14px;
+  
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: @header-color;
+  text-transform: uppercase;
+}
+
+.additional-list__information {
+  width: 100%;
+  margin-bottom: 14px;
+  
+  font-family: Arial, Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  
+  border-spacing: 0;
+}
+
+.additional-list__information td {
+  padding: 0;
+}
+
+.additional-list__value {
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.additional-list__button {
+  padding: 10px 15px;
+  
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .additional-list__item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 37px 27px;
+    
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+  
+  .additional-list__title {
+    width: 50%;
+    margin: 0;
+    
+    font-size: 20px;
+    line-height: 20px;
+  }
+  
+  .additional-list__information {
+    width: 50%;
+    margin: 0;
+    margin-top: 5px;
+    
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .additional-list__value {
+    width: 95px;
+  }
+  
+  .additional-list__field {
+    text-align: right;
+  }
+  
+  .additional-list__button {
+    width: 100%;
+    margin-top: 21px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .additional__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .additional-list__item {
+    width: 895px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    
+    border-left: 0;
+    border-right: 0;
+  }
+  
+  .additional-list__title,
+  .additional-list__information {
+    width: 285px;
+  }
+  
+  .additional-list__button {
+    width: 245px;
+    margin-top: 0;
+    padding: 10px 15px;
+    
+    font-size: 16px;
+  }
+  
+  .additional-list__field {
+    text-align-last: left;
+  }
+}

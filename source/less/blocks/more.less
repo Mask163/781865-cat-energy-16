@@ -1,33 +1,33 @@
 .more {
   position: relative;
-  
+
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
-  
+
   text-align: center;
-  
+
   &::before {
     content: "";
     position: absolute;
     top: 27px;
     left: 50%;
-    
+
     width: 30px;
     height: 30px;
     margin-left: -15px;
-    
+
     background: url(../../img/icon-plus-mobile.svg) 0 0 no-repeat;
   }
 }
 
 .more__inner {
-  padding: 81px 20px 24px 20px;
+  padding: 79px 20px 24px;
 }
 
 .more__title {
   margin: 0;
   margin-bottom: 7px;
-  
+
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -38,37 +38,49 @@
 .more__text {
   margin: 0;
   margin-bottom: 21px;
-  
+
   font-family: Arial, Tahoma, sans-serif;
   font-size: 12px;
   line-height: 16px;
 }
 
 .more__button {
-  color: @text-color;
+  padding-bottom: 10px;
   
+  font-size: 16px;
+  line-height: 20px;
+  color: @text-color;
+
   background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: #c3c3c3;
+  }
 }
 
 @media (min-width: 768px) {
   .more {
     box-sizing: border-box;
-    width: 42.1875%;
-    
+    width: 324px;
+
     border: 1px solid #ededed;
-    
+
     &::before {
       top: 55px;
-      
+
       width: 60px;
       height: 60px;
       margin-left: -30px;
-    } 
+    }
   }
-  
+
   .more__title {
-    padding: 0 25px;
-    margin-bottom: 20px;
+    padding: 0 35px;
+    margin-bottom: 26px;
 
     font-size: 20px;
   }
@@ -78,16 +90,17 @@
     margin-bottom: 85px;
 
     font-size: 16px;
+    line-height: 18px;
   }
 
   .more__button {
-    padding: 12px 15px;
+    padding: 11px 15px;
 
     font-size: 16px;
   }
-  
+
   .more__inner {
-    padding: 165px 37px 30px;
+    padding: 165px 37px 38px;
   }
 }
 
@@ -95,11 +108,12 @@
   .more {
     width: 245px;
   }
-  
+
   .more__title {
     padding: 0;
+    margin-bottom: 25px;
   }
-  
+
   .more__text {
     padding: 0;
   }

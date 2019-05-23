@@ -1,20 +1,29 @@
 .button {
   display: block;
-  padding: 11px 15px;
+  box-sizing: border-box;
+  padding: 11px 15px 12px;
 
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
   color: #ffffff;
   text-align: center;
 
   background-color: #68b738;
 
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #99c684;
+  }
 }
 
 @media (min-width: 768px) {
   .button {
-    padding: 16px 15px;
+    padding: 17px 15px;
 
     font-size: 20px;
   }

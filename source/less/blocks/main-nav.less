@@ -15,7 +15,7 @@
   position: relative;
 
   display: block;
-  padding: 23px 20px 17px 20px;
+  padding: 23px 20px 22px 20px;
 
   font-size: 20px;
   line-height: 20px;
@@ -23,6 +23,14 @@
 
   color: #111111;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {
@@ -48,7 +56,7 @@
   }
 
   .main-nav__link {
-    padding: 6px 0;
+    padding: 9px 0;
 
     font-size: 18px;
     line-height: 25px;
@@ -71,11 +79,17 @@
 }
 
 @media (min-width: 1440px) {
+  .main-nav__item {
+    margin-right: 34px;
+  }
+  
   .main-nav__link {
     font-size: 20px;
     color: #ffffff;
 
     &::before {
+      bottom: -1px;
+      
       background-color: #ffffff;
     }
   }

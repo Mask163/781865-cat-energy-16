@@ -1,0 +1,145 @@
+.extra {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.extra__inner {
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px 38px;
+}
+
+.extra__title {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: @header-color;
+  text-transform: none;
+}
+
+.extra__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.extra__item {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.extra__description {
+  position: relative;
+
+  padding-left: 46px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -4px;
+    left: 0;
+
+    width: 29px;
+    height: 29px;
+
+    border: 1px solid #ededed;
+  }
+
+  &:hover {
+    &::before {
+      border-color: #cdcdcd;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+input[type="checkbox"]:checked + .extra__description {
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: -4px;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    background: url(../../img/icon-tick.svg) center no-repeat;
+    background-size: 21px 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .extra__inner {
+    padding: 0 70px 60px;
+  }
+
+  .extra__title {
+    margin-bottom: 57px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .extra__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .extra__item {
+    width: 50%;
+      &:not(:last-child) {
+      margin-bottom: 48px;
+    }
+  }
+
+  .extra__description {
+    padding-left: 58px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      top: -5px;
+
+      width: 39px;
+      height: 39px;
+    }
+  }
+
+  input[type="checkbox"]:checked + .extra__description {
+    &::after {
+      top: -5px;
+
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .extra__inner {
+    padding: 0 110px 68px;
+  }
+
+  .extra__list {
+    justify-content: space-between;
+  }
+
+  .extra__item {
+    width: 245px;
+    &:not(:last-child) {
+      margin: 0;
+    }
+  }
+}

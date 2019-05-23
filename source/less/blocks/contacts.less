@@ -1,0 +1,127 @@
+.contacts {
+  position: relative;
+
+  background-color: #f2f2f2;
+
+  &--index {
+    background-color: #ffffff;
+  }
+}
+
+.contacts__top-inner {
+  display: flex;
+  padding: 29px 19px 25px;
+}
+
+.contacts__dealers {
+  width: 50%;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.contacts__adress {
+  width: 50%;
+
+  font-family: Arial, Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts__bottom {
+  position: relative;
+
+  height: 362px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.contacts__map {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.contacts__iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .contacts__top-inner {
+    padding: 64px 30px 58px;
+  }
+
+  .contacts__dealers {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__dealers,
+  .contacts__adress {
+    width: 24%;
+    padding: 0 41px;
+  }
+
+  .contacts__adress {
+    margin-left: auto;
+
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .contacts__spb {
+    display: block;
+    margin-top: 18px;
+  }
+
+  .contacts__bottom {
+    height: 396px;
+  }
+
+  .contacts__map {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contacts {
+    background-color: @bg-color;
+  }
+
+  .contacts__top {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 570px;
+
+    background-color: @bg-color;
+
+    z-index: 1;
+  }
+
+  .contacts__top-inner {
+    padding: 65px 90px 55px 76px;
+  }
+
+  .contacts__dealers {
+    width: 170px;
+    padding: 0;
+  }
+
+  .contacts__adress {
+    width: 155px;
+    padding: 0;
+    
+    text-align: left;
+  }
+
+  .contacts__bottom {
+    height: 400px;
+  }
+
+  .contacts__map {
+    width: 1440px;
+  }
+}

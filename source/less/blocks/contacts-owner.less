@@ -1,0 +1,163 @@
+.contacts-owner {
+  border: none;
+  padding: 0;
+}
+
+.contacts-owner__inner {
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.contacts-owner__title {
+  margin: 0;
+  margin-bottom: 28px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: @header-color;
+  text-transform: none;
+}
+
+.contacts-owner__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-owner__item {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.contacts-owner__description {
+  margin-right: 15px;
+}
+
+.contacts-owner__field {
+  flex-grow: 1;
+  box-sizing: border-box;
+  height: 45px;
+  padding: 12px 15px;
+  padding-right: 40px;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+
+  border: 1px solid #e6e6e6;
+  text-transform: uppercase;
+  outline: none;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus + .contacts-owner__svg path {
+    fill: #68b738;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+    placeholders: none;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border: 2px solid #ff8282;
+  }
+
+  &:invalid:not(:placeholder-shown) + .contacts-owner__svg path {
+    fill: #ff8282;
+  }
+}
+
+.contacts-owner__svg {
+  position: absolute;
+
+  &--email {
+    top: 16px;
+    right: 16px;
+  }
+
+  &--tel {
+    top: 13px;
+    right: 13px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts-owner__inner {
+    padding: 75px 70px 65px;
+  }
+
+  .contacts-owner__title {
+    margin-bottom: 68px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .contacts-owner__description {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .contacts-owner__field {
+    height: 52px;
+    padding: 16px 45px 16px 15px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .contacts-owner__svg {
+    &--email {
+    top: 20px;
+    right: 21px;
+  }
+
+    &--tel {
+      top: 17px;
+      right: 17px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .contacts-owner__inner {
+    padding: 70px 110px 68px;
+  }
+
+  .contacts-owner__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts-owner__item {
+    width: 570px;
+  }
+
+  .contacts-owner__field {
+    padding-right: 50px;
+  }
+
+  .contacts-owner__svg {
+    &--email {
+    top: 20px;
+    right: 20px;
+  }
+
+    &--tel {
+      top: 17px;
+      right: 19px;
+    }
+  }
+}
