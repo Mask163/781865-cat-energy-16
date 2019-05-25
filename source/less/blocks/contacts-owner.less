@@ -1,18 +1,33 @@
 .contacts-owner {
+  position: relative;
+  
   border: none;
   padding: 0;
+  
+  &::before {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+    background: linear-gradient(to right, transparent 69.0625%, #68b738 69.0625%);
+  }
 }
 
 .contacts-owner__inner {
   box-sizing: border-box;
-  max-width: 1440px;
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 30px 17px;
 }
 
 .contacts-owner__title {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 31px;
 
   font-size: 24px;
   line-height: 24px;
@@ -39,7 +54,7 @@
 }
 
 .contacts-owner__description {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .contacts-owner__field {
@@ -94,25 +109,58 @@
 }
 
 @media (min-width: 768px) {
+  .contacts-owner {
+    &::before {
+      top: 98px;
+      
+      background: linear-gradient(to right, transparent 81.1197%, #68b738 81.1197%);
+    }
+    
+    &::after {
+      position: absolute;
+      top: 98px;
+      left: -2px;
+
+      content: "";
+      display: block;
+      width: 100%;
+      height: 3px;
+
+      background: linear-gradient(to right, #68b738 3.9062%, transparent 3.9062%);
+    }
+  }
+  
   .contacts-owner__inner {
-    padding: 75px 70px 65px;
+    padding: 75px 64px 65px 68px;
   }
 
   .contacts-owner__title {
-    margin-bottom: 68px;
+    margin-bottom: 76px;
 
     font-size: 36px;
     line-height: 36px;
   }
 
   .contacts-owner__description {
+    margin-right: 20px;
+    
     font-size: 20px;
     line-height: 20px;
+  }
+  
+  .contacts-owner__item {
+    &:last-child .contacts-owner__description {
+      margin-right: 14px;
+    }
+    
+    &:not(:last-child) {
+      margin-bottom: 21px;
+    }
   }
 
   .contacts-owner__field {
     height: 52px;
-    padding: 16px 45px 16px 15px;
+    padding: 16px 45px 16px 19px;
 
     font-size: 20px;
     line-height: 20px;
@@ -131,9 +179,25 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
+  .contacts-owner {
+    &::before {
+      top: 91px;
+      
+      background: linear-gradient(to right, transparent 45.6153%, #68b738 45.6153%);
+    }
+    
+    &::after {
+      display: none;
+    }
+  }
+  
   .contacts-owner__inner {
-    padding: 70px 110px 68px;
+    padding: 70px 38px 46px;
+  }
+  
+  .contacts-owner__title {
+    margin-bottom: 75px;
   }
 
   .contacts-owner__list {

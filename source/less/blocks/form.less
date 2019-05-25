@@ -7,13 +7,13 @@
 
 .form__inner {
   box-sizing: border-box;
-  max-width: 1440px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
 .form__wrapper {
   box-sizing: border-box;
-  max-width: 1440px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 20px 30px;
   
@@ -23,8 +23,10 @@
 .form__button {
   width: 100%;
   padding: 10px 15px;
-  margin-bottom: 21px;
+  margin-bottom: 19px;
   
+  font-size: 16px;
+  line-height: 20px;
   border: none;
 }
 
@@ -40,7 +42,6 @@
   .form__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
     padding: 0 70px 72px;
   }
   
@@ -53,21 +54,23 @@
   }
   
   .form__required-field {
-    width: 45.7%;
+    width: 45%;
+    padding-top: 15px;
     
+    font-size: 16px;
     text-align: left; 
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .form__inner {
     display: flex;
     justify-content: space-between;
-    padding: 0 110px;
+    padding: 0 40px;
   }
   
   .form__wrapper {
-    padding: 0 110px 82px;
+    padding: 0 40px 82px;
   }
   
   .form__button,

@@ -1,7 +1,7 @@
 .site-main__title {
   margin: 0;
   padding: 15px 20px 28px;
-  max-width: 1440px;
+  max-width: 1300px;
   margin: 0 auto;
   box-sizing: border-box;
   
@@ -11,16 +11,28 @@
   color: @header-color;
 }
 
+.site-main__title--form {
+  padding-bottom: 25px;
+}
+
 @media (min-width: 768px) {
   .site-main__title {
     padding: 56px 30px 28px;
     
     font-size: 60px;
   }
+  
+  .site-main__title--form {
+    padding-bottom: 56px;
+  }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .site-main__title {
-    padding: 72px 110px 28px;
+    padding: 72px 40px 28px;
+  }
+  
+  .site-main__title--form {
+    padding-bottom: 39px;
   }
 }
