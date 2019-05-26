@@ -15,6 +15,7 @@
     height: 3px;
     
     background: linear-gradient(to right, transparent 69.0625%, #68b738 69.0625%);
+    z-index: -1;
   }
 }
 
@@ -28,7 +29,7 @@
 .contacts-owner__title {
   margin: 0;
   margin-bottom: 31px;
-
+  
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -105,6 +106,13 @@
   &--tel {
     top: 13px;
     right: 13px;
+  }
+}
+
+@media (min-width: 329px) {
+  .contacts-owner__title {
+    display: inline-block;
+    background-color: #ffffff;
   }
 }
 
@@ -188,7 +196,9 @@
     }
     
     &::after {
-      display: none;
+      top: 91px;
+      width: calc((100% - 1300px)/2);
+      background: #68b738;
     }
   }
   
@@ -198,6 +208,7 @@
   
   .contacts-owner__title {
     margin-bottom: 75px;
+    padding-right: 43px;
   }
 
   .contacts-owner__list {

@@ -15,6 +15,7 @@
     height: 3px;
     
     background: linear-gradient(to right, transparent 50.625%, #68b738 50.625%);
+    z-index: -1;
   }
 }
 
@@ -101,7 +102,8 @@
     }
     
     &::after {
-      display: none;
+      width: calc((100% - 1300px)/2);
+      background: #68b738;
     }
   }
   
@@ -110,6 +112,10 @@
   }
 
   .comment__title {
+    display: inline-block;
     margin-bottom: 75px;
+    padding-right: 40px;
+    
+    background-color: #ffffff;
   }
 }

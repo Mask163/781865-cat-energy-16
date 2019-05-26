@@ -16,6 +16,7 @@
     height: 3px;
     
     background: linear-gradient(to right, transparent 57.5%, #68b738 57.5%);
+    z-index: -1;
   }
 }
 
@@ -171,12 +172,20 @@ input[type="checkbox"]:checked + .extra__description {
     }
     
     &::after {
-      display: none;
+      width: calc((100% - 1300px)/2);
+      background: #68b738;
     }
   }
   
   .extra__inner {
     padding: 0 40px 70px;
+  }
+  
+  .extra__title {
+    display: inline-block;
+    padding-right: 43px;
+    
+    background-color: #ffffff;
   }
 
   .extra__list {
