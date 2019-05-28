@@ -15,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
   &:not(:last-child) {
     margin-bottom: 14px;
   }
@@ -22,7 +23,7 @@
 
 .information__description {
   margin-right: 15px;
-  
+
   white-space: nowrap;
 }
 
@@ -31,27 +32,27 @@
   box-sizing: border-box;
   height: 45px;
   padding: 12px 15px;
-  
+
   font-size: 16px;
   line-height: 18px;
   color: #444444;
-  
+
   border: 1px solid #e6e6e6;
   text-transform: uppercase;
   outline: none;
-  
+
   &:hover {
     border-color: #cdcdcd;
   }
-  
+
   &:focus {
     border: 2px solid #444444;
   }
-  
+
   &:focus:invalid {
     border: 2px solid #ff8282;
   }
-  
+
   &:not(:focus):invalid:not(:placeholder-shown) {
     border: 2px solid #ff8282;
   }
@@ -61,24 +62,24 @@
   .information__list {
     padding: 0 70px 72px;
   }
-  
+
   .information__description {
     margin-right: 17px;
-    
+
     font-size: 20px;
     line-height: 20px;
   }
-  
+
   .information__item {
     &:not(:last-child) {
       margin-bottom: 20px;
     }
 }
-  
+
   .information__field {
     height: 52px;
     padding: 16px 18px;
-    
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -88,7 +89,7 @@
   .information {
     width: 570px;
   }
-  
+
   .information__list {
     padding: 0;
   }

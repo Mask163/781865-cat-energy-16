@@ -1,20 +1,20 @@
 .extra {
   position: relative;
-  
+
   margin: 0;
   border: none;
   padding: 0;
-  
+
   &::before {
     position: absolute;
     top: 13px;
     left: 0;
-    
+
     content: "";
     display: block;
     width: 100%;
     height: 3px;
-    
+
     background: linear-gradient(to right, transparent 57.5%, #68b738 57.5%);
     z-index: -1;
   }
@@ -99,10 +99,10 @@ input[type="checkbox"]:checked + .extra__description {
   .extra {
     &::before {
       top: 22px;
-      
+
       background: linear-gradient(to right, transparent 41.927%, #68b738 41.927%);
     }
-    
+
     &::after {
       position: absolute;
       top: 22px;
@@ -116,7 +116,7 @@ input[type="checkbox"]:checked + .extra__description {
       background: linear-gradient(to right, #68b738 4%, transparent 4%);
     }
   }
-  
+
   .extra__inner {
     padding: 0 70px 13px;
   }
@@ -170,21 +170,21 @@ input[type="checkbox"]:checked + .extra__description {
     &::before {
       background: linear-gradient(to right, transparent 22.4615%, #68b738 22.4615%);
     }
-    
+
     &::after {
       width: calc((100% - 1300px)/2);
       background: #68b738;
     }
   }
-  
+
   .extra__inner {
     padding: 0 40px 70px;
   }
-  
+
   .extra__title {
     display: inline-block;
     padding-right: 43px;
-    
+
     background-color: #ffffff;
   }
 
