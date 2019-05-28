@@ -1,16 +1,16 @@
 @font-face {
-  font-family: Oswald;
+  font-family: "Oswald";
   src: url("../fonts/oswaldmedium.woff2") format("woff2"),
-        url("../fonts/oswaldmedium.woff") format("woff");
+    url("../fonts/oswaldmedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: Oswald;
+  font-family: "Oswald";
   src: url("../fonts/oswaldregular.woff2") format("woff2"),
-        url("../fonts/oswaldregular.woff") format("woff");
+    url("../fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@
 body {
   min-width: 320px;
 
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -51,18 +51,12 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
